@@ -1,0 +1,68 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< io.github.easy4j:shiro-j2cache >-------------------
+[INFO] Building io.github.easy4j:shiro-j2cache 2.0.x.20260630-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.21.0-GA during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- jacoco:0.8.15:prepare-agent (prepare-agent) @ shiro-j2cache ---
+[INFO] argLine set to -javaagent:/tmp/shiro-302-m2/org/jacoco/org.jacoco.agent/0.8.15/org.jacoco.agent-0.8.15-runtime.jar=destfile=/Users/wandl/workspaces/workspace-github-easy-4-java/shiro-compat-2.0.x/shiro-j2cache/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ shiro-j2cache ---
+[INFO] skip non existing resourceDirectory /Users/wandl/workspaces/workspace-github-easy-4-java/shiro-compat-2.0.x/shiro-j2cache/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ shiro-j2cache ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 3 source files with javac [debug parameters release 17] to target/classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /Users/wandl/workspaces/workspace-github-easy-4-java/shiro-compat-2.0.x/shiro-j2cache/src/main/java/org/apache/shiro/cache/j2cache/J2CacheManager.java:[19,24] 找不到符号
+  符号:   类 ShiroException
+  位置: 程序包 org.apache.shiro
+[ERROR] /Users/wandl/workspaces/workspace-github-easy-4-java/shiro-compat-2.0.x/shiro-j2cache/src/main/java/org/apache/shiro/cache/j2cache/J2CacheManager.java:[22,29] 找不到符号
+  符号:   类 Destroyable
+  位置: 程序包 org.apache.shiro.util
+[ERROR] /Users/wandl/workspaces/workspace-github-easy-4-java/shiro-compat-2.0.x/shiro-j2cache/src/main/java/org/apache/shiro/cache/j2cache/J2CacheManager.java:[23,29] 找不到符号
+  符号:   类 Initializable
+  位置: 程序包 org.apache.shiro.util
+[ERROR] /Users/wandl/workspaces/workspace-github-easy-4-java/shiro-compat-2.0.x/shiro-j2cache/src/main/java/org/apache/shiro/cache/j2cache/J2CacheManager.java:[28,69] 找不到符号
+  符号: 类 Initializable
+[ERROR] /Users/wandl/workspaces/workspace-github-easy-4-java/shiro-compat-2.0.x/shiro-j2cache/src/main/java/org/apache/shiro/cache/j2cache/J2CacheManager.java:[28,84] 找不到符号
+  符号: 类 Destroyable
+[ERROR] /Users/wandl/workspaces/workspace-github-easy-4-java/shiro-compat-2.0.x/shiro-j2cache/src/main/java/org/apache/shiro/cache/j2cache/J2CacheManager.java:[40,35] 找不到符号
+  符号:   类 ShiroException
+  位置: 类 org.apache.shiro.cache.j2cache.J2CacheManager
+[INFO] 6 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.011 s
+[INFO] Finished at: 2026-11-17T23:17:02+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.15.0:compile (default-compile) on project shiro-j2cache: Compilation failure: Compilation failure: 
+[ERROR] /Users/wandl/workspaces/workspace-github-easy-4-java/shiro-compat-2.0.x/shiro-j2cache/src/main/java/org/apache/shiro/cache/j2cache/J2CacheManager.java:[19,24] 找不到符号
+[ERROR]   符号:   类 ShiroException
+[ERROR]   位置: 程序包 org.apache.shiro
+[ERROR] /Users/wandl/workspaces/workspace-github-easy-4-java/shiro-compat-2.0.x/shiro-j2cache/src/main/java/org/apache/shiro/cache/j2cache/J2CacheManager.java:[22,29] 找不到符号
+[ERROR]   符号:   类 Destroyable
+[ERROR]   位置: 程序包 org.apache.shiro.util
+[ERROR] /Users/wandl/workspaces/workspace-github-easy-4-java/shiro-compat-2.0.x/shiro-j2cache/src/main/java/org/apache/shiro/cache/j2cache/J2CacheManager.java:[23,29] 找不到符号
+[ERROR]   符号:   类 Initializable
+[ERROR]   位置: 程序包 org.apache.shiro.util
+[ERROR] /Users/wandl/workspaces/workspace-github-easy-4-java/shiro-compat-2.0.x/shiro-j2cache/src/main/java/org/apache/shiro/cache/j2cache/J2CacheManager.java:[28,69] 找不到符号
+[ERROR]   符号: 类 Initializable
+[ERROR] /Users/wandl/workspaces/workspace-github-easy-4-java/shiro-compat-2.0.x/shiro-j2cache/src/main/java/org/apache/shiro/cache/j2cache/J2CacheManager.java:[28,84] 找不到符号
+[ERROR]   符号: 类 Destroyable
+[ERROR] /Users/wandl/workspaces/workspace-github-easy-4-java/shiro-compat-2.0.x/shiro-j2cache/src/main/java/org/apache/shiro/cache/j2cache/J2CacheManager.java:[40,35] 找不到符号
+[ERROR]   符号:   类 ShiroException
+[ERROR]   位置: 类 org.apache.shiro.cache.j2cache.J2CacheManager
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
