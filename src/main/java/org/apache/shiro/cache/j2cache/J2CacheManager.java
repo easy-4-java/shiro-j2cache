@@ -16,12 +16,14 @@
 package org.apache.shiro.cache.j2cache;
 
 
-import org.apache.shiro.ShiroException;
+import java.util.Objects;
+
+import org.apache.shiro.lang.ShiroException;
 import org.apache.shiro.cache.AbstractCacheManager;
 import org.apache.shiro.cache.Cache;
 import org.apache.shiro.cache.CacheException;
-import org.apache.shiro.util.Destroyable;
-import org.apache.shiro.util.Initializable;
+import org.apache.shiro.lang.util.Destroyable;
+import org.apache.shiro.lang.util.Initializable;
 
 import net.oschina.j2cache.CacheChannel;
 import net.oschina.j2cache.J2Cache;
@@ -101,7 +103,7 @@ public class J2CacheManager extends AbstractCacheManager implements Initializabl
     @Override
     public void init() throws ShiroException {
         //do nothing
-        if (channel == null) {
+        if (Objects.isNull(channel)) {
             channel = J2Cache.getChannel();
         }
     }
@@ -118,7 +120,7 @@ public class J2CacheManager extends AbstractCacheManager implements Initializabl
      */
     @Override
     public void destroy() throws Exception {
-        if (channel != null) {
+        if (Objects.nonNull(channel)) {
             channel.close();
         }
     }
@@ -142,7 +144,7 @@ public class J2CacheManager extends AbstractCacheManager implements Initializabl
      */
     @Override
     protected J2CacheWrapper<Object> createCache(String name) throws CacheException {
-        if (channel == null) {
+        if (Objects.isNull(channel)) {
             channel = J2Cache.getChannel();
         }
         return new J2CacheWrapper<Object>(name, channel);
